@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  flex-direction: column;
+  background-image: url(https://wallup.net/wp-content/uploads/2018/09/25/612494-The_Matrix-Tetris-movies-video_games-crossover-code-retro_games-748x468.jpg);
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: red;
+  padding: 3px;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.instructions {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 5px;
+}
+
+#game-board {
+  background-color: green;
+  width: 85vmin;
+  height: 85vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+  background-color: black;
+}
+
+.food {
+  background-color: crimson;
+  border-radius: 50%;
+}
